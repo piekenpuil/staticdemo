@@ -5,9 +5,12 @@
             "redirect":"/.auth/login/twitter"
         },
         {
-            "route": "/profile",
+            "route": "/test",
+            "redirect":"/index2.html",
             "allowedRoles": ["authenticated"]
         },
+        {"route":"/test2", "redirect":"/index2.html", "allowedRoles":["anonymous"]}
+        ,
         {
             "route": "/admin/*",
             "allowedRoles": ["administrator"]
