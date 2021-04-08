@@ -12,7 +12,15 @@
   <main>
     <h1>It is alive!! Alive !!!</h1>
     <h2>That was not that hard...</h2>
+    <p>Showing API message : <b id="name">...</b></p>
   </main>
+
+  <script>
+    (async function() {
+      let txt = await (await fetch('api/message')).text();
+      document.querySelector('#name').textContent = txt;
+    }())
+  </script>
 </body>
 
 </html>
