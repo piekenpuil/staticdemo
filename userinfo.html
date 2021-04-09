@@ -16,7 +16,7 @@
         async function getUserInfo() {
             let resp = await fetch('/.auth/me');
             let json = await resp.json();
-            let txt = `id from ${json.identityProvider} : ${json.userDetails}`;
+            let txt = `id from ${json.clientPrincipal.identityProvider} : ${json.clientPrincipal.userDetails}`;
             document.querySelector("#info").innerHTML=txt;
         }
 
