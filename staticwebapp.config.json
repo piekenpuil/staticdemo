@@ -21,7 +21,7 @@
         },
         {
             "route": "/ok",
-            "rewrite":"/index3.hml",
+            "rewrite":"/index3.html",
             "allowedRoles": ["authenticated"]
         }
     ],
