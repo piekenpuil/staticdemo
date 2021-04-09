@@ -18,7 +18,9 @@ namespace U2U.API
             ILogger log)
         {
             
-            var info=req.Headers["x-ms-client-principal"].ToString();
+            var header=req.Headers["x-ms-client-principal"].ToString();
+            var bytes = System.Convert.FromBase64String(header);
+            var info = System.Text.Encoding.UTF8.GetString(bytes);
             
             
 
