@@ -20,7 +20,14 @@
             document.querySelector("#info").innerHTML=txt;
         }
 
-        getUserInfo();
+        async function getUserInfo2() {
+            let resp = await fetch('/api/UserInfo');
+            let info = await resp.text();
+            document.querySelector("#info").innerHTML = info;
+        }
+
+        //getUserInfo();
+        getUserInfo2();
 
     </script>
 </body>
