@@ -18,6 +18,11 @@
             "route": "/test3",
             "redirect":"/index2.hml",
             "allowedRoles": ["administrator"]
+        },
+        {
+            "route": "/ok",
+            "rewrite":"/index3.hml",
+            "allowedRoles": ["authenticated"]
         }
     ],
     "globalHeaders": {
