@@ -5,6 +5,10 @@
             "redirect":"/.auth/login/twitter"
         },
         {
+            "route":"/login2",
+            "redirect":"/.auth/login/twitter?post_login_redirect_uri=/ok"
+        },
+        {
             "route": "/test",
             "rewrite":"/index2.html",
             "allowedRoles": ["authenticated"]
