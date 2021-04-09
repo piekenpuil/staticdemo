@@ -27,6 +27,15 @@
             "route": "/ok",
             "rewrite":"/index3.html",
             "allowedRoles": ["authenticated"]
+        },
+        {
+            "route": "/logout",
+            "rewrite":"/.auth/logout"
+        },
+        {
+            "route":"/info",
+            "rewrite":"/userinfo.html",
+            "allowedRoles": ["authenticated"]
         }
     ],
     "globalHeaders": {
