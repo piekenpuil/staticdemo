@@ -1,7 +1,7 @@
 {
     "routes": [
         {
-            "route":"login",
+            "route":"/login",
             "redirect":"/.auth/login/twitter"
         },
         {
@@ -13,6 +13,11 @@
         {
             "route": "/api/*",
             "allowedRoles": ["authenticated"]
+        },
+        {
+            "route": "/test3",
+            "redirect":"/index2.hml",
+            "allowedRoles": ["administrator"]
         }
     ],
     "globalHeaders": {
